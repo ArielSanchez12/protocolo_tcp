@@ -10,11 +10,11 @@ public class  Cliente {
   public static void main(String[] args) {
     try {
       //Crear el socket para conectarse al servidor
-      Socket socketCliente = new Socket("localhost", 4000);
+      Socket socketCliente2 = new Socket("localhost", 4000);
 
       //Crear buffers para enviar y recibir datos
-      BufferedReader entrada = new BufferedReader(new InputStreamReader(socketCliente.getInputStream()));
-      PrintWriter salida = new PrintWriter(socketCliente.getOutputStream(), true);
+      BufferedReader entrada = new BufferedReader(new InputStreamReader(socketCliente2.getInputStream()));
+      PrintWriter salida = new PrintWriter(socketCliente2.getOutputStream(), true);
       Scanner scanner = new Scanner(System.in);
 
       //SI EN EL SERVIDOR PRIMERO SE ENVIAN DATOS, AQUI PRIMERO SE RECIBEN DATOS (o viceversa)
@@ -23,10 +23,10 @@ public class  Cliente {
         String datosRecibidos = entrada.readLine();
         System.out.println(datosRecibidos);
 
-        if (datosRecibidos.contains("fin del cuestionario")) {
-          socketCliente.close();
+        if (datosRecibidos.contains("fin del cuestionario2")) {
+          socketCliente2.close();
           break;
-          
+
         }
 
         //Enviar datos por teclado
@@ -41,3 +41,4 @@ public class  Cliente {
     }
   }
 }
+//ya funciono la actividad, le pase mi codigo de Cliente.java que si se conecta al servidor y le responde las preguntas

@@ -12,12 +12,12 @@ public class servidor {
 
       while (true) {
         //Aceptar conexiones de los clientes
-        Socket socketCliente = socketServidor.accept();
-        System.out.println("Cliente conectado: " + socketCliente.getInetAddress().getHostAddress());
+        Socket socketCliente2 = socketServidor.accept();
+        System.out.println("Cliente conectado: " + socketCliente2.getInetAddress().getHostAddress());
 
         //Crear un hilo para manejar la conexion con el cliente
-        HilosCliente hiloCliente = new HilosCliente(socketCliente);
-        hiloCliente.start();
+        HilosCliente2 hiloCliente2 = new HilosCliente2(socketCliente2);
+        hiloCliente2.start();
       }
     } catch (IOException e) {
       e.printStackTrace();

@@ -56,7 +56,7 @@ public class HilosCliente extends Thread{
         } else {
           respuesta = "Incorrecto";
         }
-        salida.println(respuesta + ": fin del cuestionario, tu puntaje es: " + puntaje + "/3");
+        salida.println(respuesta + " fin del xxxqwe, tu puntaje es: " + puntaje + "/3");
         break;
       }
       System.out.println("Cliente desconectado");
