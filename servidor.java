@@ -26,3 +26,6 @@ public class servidor {
 }
 
 //PARA QUE NO SE CIERRE, DEBEMOS MODIFICAR EL SERVIDOR PARA QUE ACEPTE MULTIPLES CONEXIONES (se quede escuchando)
+//Hasta aqui es para lo de las preguntas y respuestas pero es mucho copia y pega, ahora usaremos vectores para las preguntas y respuestas
+//ademas de un ciclo para recorrerlas y no tener que escribir tanto codigo repetido, hago este commit para no pderder el codigo original
+//a partir de aqui ya voy a sobreescribir el codigo
